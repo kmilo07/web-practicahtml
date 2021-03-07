@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdfd;
+}
+
+header {
+    background: #333333;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav {
+    background: #edfaed;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul {
+    padding-left: 39%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        padding-left: 12%;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px) {
+    nav ul {
+        padding-left: 24%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1200px) {
+    nav ul {
+        padding-left: 29%;
+    }
+}
+
+footer {
+    background-color: #333333;
+    float: left;
+    bottom: 0;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+img {
+    width: 20%;
+    margin: 20px;
+}
+
+section {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    min-height: calc(100vh - 230px);
+}
+
+a.redirigir {
+    color: #007ACC;
+}
+
+.video {
+    width: 500px;
+}
+
+.completCarrusel {
+    float: left;
+    width: 100%;
+    background: #fffdfd;
+    min-height: calc(100vh-200px);
+}
+
+.contenido {
+    padding: 10px;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+ul.carrusel {
+    position: relative;
+    width: 1060px;
+    height: 600px;
+}
+
+ul.carrusel li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+ul.carrusel li img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul.carrusel li:first-child {
+    opacity: 1;
+}
+
+ul.carrusel li:target {
+    opacity: 1;
+}
